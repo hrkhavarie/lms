@@ -16,13 +16,11 @@ import { usePathname } from "next/navigation";
 ]
  const TopNavigation: React.FC = ()=>{
     const pathname = usePathname();
-    console.log(pathname);
     return(
         <ul className="flex justify-between gap-x-5 mr-12">
             {
                 menuItems.map(item=>{
                     const isActive = pathname === item.href;
-                    console.log(isActive);
                     return(
                         <li key={item.href}>
                         <Link href={item.href}
