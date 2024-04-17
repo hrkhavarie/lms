@@ -91,7 +91,9 @@ export default function RootLayout({
        dark:text-base-content">
         
         <Header/>
+        <main>
         {children}
+        </main>
         <Footer/>
       </body>
     </html>
