@@ -1,7 +1,9 @@
 import Image from "next/image";
+import { Button } from "./_components/button";
 
 export default function Home() {
   return (
+    <>
     <section className="bg-hero-pattern mt-5 xl:mt-20 xl:bg-left bg-center bg-no-repeat">
       <div className="container flex flex-col-reverse items-center xl:flex-row">
       <div className="flex flex-col gap-5 mt-12 pb-5 text-center xl:text-right ">
@@ -14,6 +16,11 @@ export default function Home() {
       </div>
     </section>
 
+    <div className="container">
+      <Button variant="info" size="large" shape="wide" animatedIcon={true} >ثبت نام</Button>
+    </div>
+
+    </>
   );
 }
 
