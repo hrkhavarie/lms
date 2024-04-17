@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Figtree } from "next/font/google";
- import localFont from 'next/font/local'
+import localFont from 'next/font/local'
+import Footer from "./_components/footer/footer";
+import Header from "./_components/header/header";
+
 
 const figtree = Figtree({
   display:'swap' , 
@@ -82,18 +85,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl" className={`${iranyekanx.variable} ${figtree.variable}`}>
-
-      <body>
-        <header>
-          
-          <h1 className="text-3xl">
-          
-            دوره معماری ری اکت
-            </h1>
-
-        </header>
-        {children}</body>
+    <html lang="fa" dir="rtl" className={`dark ${iranyekanx.variable} ${figtree.variable}`}>
+{/*  */}
+      <body className="min-h-screen grid grid-rows-[80px_1fr_auto] font-fold uppercase dark:bg-base-100
+       dark:text-base-content">
+        
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }

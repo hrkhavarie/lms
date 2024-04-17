@@ -19,7 +19,7 @@ export const Colors: React.FC = () => (
 
 const ColorBox:React.FC<{name:string , color:string}> =({
     name , 
-    color ,
+    color , 
 })=>( 
     <div className="w-96 h-60 flex flex-col items-center justify-center text-center uppercase text-lg font-semibold"  
     style={{backgroundColor:color , color: getTextColor(color) }}>
