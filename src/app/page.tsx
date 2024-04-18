@@ -10,14 +10,20 @@ export default function Home() {
         <h3 className="text-xl dark:text-info xl:text-2xl text-center xl:text-right ">خوش اومدی به...</h3>
         <h1 className="text-3xl font-black lg:text-5xl xl:text-5xl gradient">مسیر صعودی به قله های برنامه نویسی</h1>
         <p>هر جای مسیر برنامه نویسی، با همراهی استادهای با تجربه کلاسبن می تونی بدون محدودیت به قله های بالاتر صعود کنی، ماهواتو داریم.</p>
+        <div className="mt-5 gap-4 flex mb-5">
+          <Button variant="primary" size="large">دوره های آموزشی برنامه نویسی</Button>
+          <Button variant="neutral" size="large"> مشاروه دوره ها   </Button>
+        </div>
         <Image className="grayscale mt-4 opacity-70 m-auto xl:m-0 " src='/assets/images/frameworks.png' alt="" height={39} width={412} />
+
       </div>
       <Image src='/assets/images/programmer-landing.svg' alt="کلاسبن" height={521} width={702} />
       </div>
+
     </section>
 
     <div className="container">
-      <Button variant="info" size="large" shape="wide" animatedIcon={true} >ثبت نام</Button>
+      <Button variant="secondary"  className=""  size="small" shape="full"  >ثبت نام</Button>
     </div>
 
     </>
