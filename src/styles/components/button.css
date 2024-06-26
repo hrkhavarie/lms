@@ -229,10 +229,7 @@
             @apply h-8 px-3;
             font-size: 0.875rem;;
         }
-        &-md{
-            @apply h-12 px-4;
-            font-size: 0.875rem;
-        }
+        
         &-lg{
             @apply h-16 px-6;
             font-size: 1.125rem;
@@ -245,15 +242,15 @@
         }
 
         &-square{
+            @apply h-12 w-12 w-6 p-0;
+
             &:where(.btn-xs){
                 @apply h-6 w-6 p-0;
             }
             &:where(.btn-sm){
                 @apply h-8 w-8 p-0;
             }
-            &:where(.btn-md){
-                @apply h-12 w-12 p-0;
-            }
+            
             &:where(.btn-lg){
                 @apply h-16 w-16 p-0;
             }

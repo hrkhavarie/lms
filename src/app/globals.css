@@ -2,10 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import '../styles/components/components.css';
-/* 
-@tailwind base;
-@tailwind components;
-@tailwind utilities; */
+
 
 
 html{
@@ -18,4 +15,8 @@ html{
 
 .gradient{
     @apply bg-gradient-to-r from-gradient-first to-gradient-second text-transparent bg-clip-text
+}
+
+.container{
+    @apply  w-[90%];
 }

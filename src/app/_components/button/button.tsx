@@ -17,7 +17,7 @@ const shapeClasses:Record<ButtonShape , string> = {
 
 
 }
-export const Button:React.FC<ButtonProps> = ({
+ export const  Button:React.FC<ButtonProps> = ({
     variant , 
     size = "normal" , 
     isDisabled = false, 
