@@ -29,9 +29,6 @@ export default async function Home() {
 
       <CourseCardList courses = {newestCourses} />
     </section>
-   
-    
-
     </>
   );
 }

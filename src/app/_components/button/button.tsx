@@ -13,9 +13,6 @@ const shapeClasses:Record<ButtonShape , string> = {
     wide: 'btn-wide' , 
     full: 'btn-wide',
     square: 'btn-square' , 
-
-
-
 }
  export const  Button:React.FC<ButtonProps> = ({
     variant , 
@@ -44,9 +41,6 @@ const shapeClasses:Record<ButtonShape , string> = {
     {[`btn-${variant}`]:variant} , 
     {[`${sizeClasses[size]}`]:size} , 
     {[`${shapeClasses}`]: shape}
-
-
-
 
     )
     return(

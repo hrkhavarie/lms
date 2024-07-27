@@ -9,6 +9,10 @@ html{
     font-family: var(--font-iranyekanx);
 }
 
+a{
+    font-weight: 400;
+}
+
 :lang(en){
     font-family: var(--font-figtree);
 }

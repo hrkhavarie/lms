@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Figtree } from "next/font/google";
 import localFont from 'next/font/local'
 import Footer from "./_components/footer/footer";
 import Header from "./_components/header/header";
+import local from "next/font/local";
 
 
 const figtree = Figtree({
@@ -14,6 +14,51 @@ const figtree = Figtree({
   variable:'--font-figtree'
 })
 
+const yekanBakh = localFont({
+  src:[
+    {
+      path:'../../public/fonts/yekanbakh/woff/YekanBakh-Light.woff',
+      style: 'Light'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff2/YekanBakh-Light.woff2',
+      style: 'Light'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff/YekanBakh-Regular.woff',
+      style: 'normal'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff2/YekanBakh-Regular.woff2',
+      style: 'normal'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff/YekanBakh-SemiBold.woff',
+      style: 'SemiBold'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff2/YekanBakh-SemiBold.woff2',
+      style: 'SemiBold'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff/YekanBakh-Bold.woff',
+      style: 'Bold'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff2/YekanBakh-Bold.woff2',
+      style: 'Bold'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff/YekanBakh-ExtraBlack.woff',
+      style: 'ExtraBlack'
+    },
+    {
+      path:'../../public/fonts/yekanbakh/woff2/YekanBakh-ExtraBlack.woff2',
+      style: 'ExtraBlack'
+    },
+  ] , 
+  variable:'--font-yekanBakh'
+})
 
 const iranyekanx = localFont({
   src:[
@@ -78,6 +123,8 @@ const iranyekanx = localFont({
   ] , 
   variable:'--font-iranyekanx'
 })
+
+
 
 export default function RootLayout({
   children,
